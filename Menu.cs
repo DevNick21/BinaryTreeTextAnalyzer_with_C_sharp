@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+
 
 namespace dsa
 {
@@ -35,7 +37,10 @@ namespace dsa
                 { "9", DisplayFrequencyForSpecificWord },
                 { "0", ExitApp }
             };
+                Stopwatch stopwatch = Stopwatch.StartNew();
                 BuildAndStoreWords();
+                stopwatch.Stop();
+                Console.WriteLine($"Time taken: {stopwatch.ElapsedMilliseconds} ms");
             }
 
             // This method runs the menu loop, reading input and dispatching the command.
@@ -53,13 +58,17 @@ namespace dsa
                     {
                         Console.WriteLine("Invalid option. Please choose a number from 0 to 9.");
                     }
-                    Console.WriteLine("###################################################################################################################################################");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
                 }
             }
 
             // Displays the menu options.
             private void DisplayMenu()
             {
+                Console.WriteLine("\nText Analysis Tool:");
                 Console.WriteLine("Choose an option (1-9):");
                 Console.WriteLine("1. Build and Store Unique Words");
                 Console.WriteLine("2. Display Unique Word Count");

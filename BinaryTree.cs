@@ -139,7 +139,7 @@ namespace dsa
 
 
         /// <summary>
-        /// Finds and displays the most frequent word in the tree by the calling the recursive GetMostFrequent function(method) on the root hence iniatiating the recursion.
+        /// Finds and displays the most frequent word in the tree by the calling the recursive FindLongestWord function(method) on the root hence initiating the recursion.
         /// </summary>
         public void DisplayLongestWord()
         {
@@ -193,7 +193,7 @@ namespace dsa
         /// <summary>
         /// Recursive method to find the node with the highest count.
         /// Where it starts from root and recursively calls itself on the child nodes till it finds a null (empty branch) as the recursion unwinds it then compares the child nodes results with its parent and gets the most, 
-        /// does this till it gets to the root where it would have explored every child nodes and leaf
+        /// does this till it gets to the root where it would have explored every child nodes and leaf.
         /// </summary>
         /// <params name="node"></params>
         private WordInfo GetMostFrequent(NodeTree node)
