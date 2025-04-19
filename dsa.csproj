@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryTree.cs" />
-    <Compile Include="DictionaryAnalyzerWtClass.cs" />
     <Compile Include="FileReader.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
